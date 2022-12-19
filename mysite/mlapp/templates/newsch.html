@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Iris</title>
+    <style>
+    body {
+    	margin: 30px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Iris</h1>
+
+	<h2>Фактические показатели объекта:</h2>
+	<h3>Чатылкинское - Холмистое</h3>
+	<span>Дозировка суспензионной ПТП, ppm (г/т)  - </span><<__>> <br />
+	<span>Дозировка сухой ПТП, ppm (г/т) - </span><<__>> <br />
+	<span>Плотность УВ, кг/м3 - </span><<__>> <br />
+	<span>Давление на входе, КГ/СМ2- </span><<__>> <br />
+	<span>Расход массовый, Т/Ч - </span><<__>> <br />
+	<span>Эффективность, Т/Ч - </span><<__>> <br />
+
+	<h2>Планирование</h2>
+
+	<h3>Чатылкинское:</h3>
+
+	<div class="row g-3">
+	  <div class="col-sm form-floating">
+	    <select class="form-select form-control" aria-label="Тип присадки">
+		  <option selected>Тип присадки</option>
+		  <option value="1">One</option>
+		  <option value="2">Two</option>
+		  <option value="3">Three</option>
+		</select>
+	  </div>
+	  <div class="form-floating col-sm">
+	    <input type="text" class="form-control" id="floatingInput" placeholder="Требуемый расход УВ, т/я">
+  		<label for="floatingInput">Требуемый расход УВ, т/я</label>
+	  </div>
+	  <div class="form-floating col-sm">
+	    <input type="text" class="form-control" id="floatingInput" placeholder="Давление на выходе, кгс/см2">
+  		<label for="floatingInput">Давление на выходе, кгс/см2</label>
+	  </div>
+	</div>
+	<br />
+	<div class="row g-3">
+	  <div class="form-floating col-sm">
+	    <input type="text" class="form-control" id="floatingInput" placeholder="Давление в конце, кгс/см2">
+  		<label for="floatingInput">Давление в конце, кгс/см2</label>
+	  </div>
+	  <div class="form-floating col-sm">
+	    <input type="text" class="form-control" id="floatingInput" placeholder="Плотность УВ, кг/м3">
+  		<label for="floatingInput">Плотность УВ, кг/м3</label>
+	  </div>
+	  <div class="form-floating col-sm">
+	    <input type="text" class="form-control" id="floatingInput" placeholder="Содержание воды, %">
+  		<label for="floatingInput">Содержание воды, %</label>
+	  </div>
+	</div>
+	<br />
+	<div class="row g-3">
+	  <div class="form-floating col-sm">
+	    <input type="text" class="form-control" id="floatingInput" placeholder="Протяжённость участка, м">
+  		<label for="floatingInput">Протяжённость участка, м</label>
+	  </div>
+	  <div class="form-floating col-sm">
+	    <input type="text" class="form-control" id="floatingInput" placeholder="Перепад высот начало участка, м">
+  		<label for="floatingInput">Перепад высот начало участка, м</label>
+	  </div>
+	  <div class="form-floating col-sm">
+	    <input type="text" class="form-control" id="floatingInput" placeholder="Перепад высот конец участка, м">
+  		<label for="floatingInput">Перепад высот конец участка, м</label>
+	  </div>
+	</div>
+
+
+	<h3>Дозировка ПТП</h3>
+	<span>Требуемая дозировка  -  <<__>> ppm (г/т) для суспензионной ПТП</span><br />
+	<span>Требуемая дозировка <<__>> ppm (г/т) для суспензионной ПТП</span><br />
+	<span>Требуемая дозировка <<__>> ppm (г/т) для сухой ПТП</span><br />
+	<span>Рекомендуемые марки</span><br />
+	<span>Марка - прогноз</span><br />
+	<span>Дозировка <<__>> ppm (г/т) для суспензионной ПТП</span><br />
+	<span>Дозировка <<__>> ppm (г/т) для суспензионной ПТП</span><br />
+	<span>Дозировка <<__>> ppm (г/т) для суспензионной ПТП</span><br />
+
+	<h3>Дозировка ПТП по меяцам при заданных параметрах</h3>
+
+	<table></table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

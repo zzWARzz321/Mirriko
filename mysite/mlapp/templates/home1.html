@@ -1,0 +1,29 @@
+{% extends 'base1.html' %}
+
+{% block content %}
+<form action="" method="post">
+    <h1></h1>
+
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <input type="submit" value="Прогноз">
+</form>
+
+{% if form.is_valid %}
+<p> Предсказание модели:
+    <br>
+    <b>{{ prediction1 }}</b> - Сухой кг/час
+    <br>
+    <b>{{ prediction2 }}</b> - Жидкой кг/час
+</p>
+{% endif %}
+
+<br>
+<br>
+<h2>Рекомендации к работе на участке:</h2>
+<p>*Модель работает по квт/ч насосной системы*</p>
+<p>*Для достижения требуемых показателей следует строго соблюдать квт/ч*</p>
+<p>**Потребление насосов от 620 до 780 квт/ч**</p>
+{% endblock %}
